@@ -6,9 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "codegen": "graphql-codegen --config codegen.yml --watch"
+    "export": "next export",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
   "description": "",
   "dependencies": {
     "@apollo/client": "^3.13.8",
+    "@tailwindcss/postcss": "^4.1.11",
     "antd": "^5.24.3",
     "axios": "^1.8.1",
     "bcrypt": "^5.1.1",
@@ -33,9 +33,14 @@
     "type-graphql": "^2.0.0-rc.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.31.0",
+    "eslint-config-next": "^15.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.7.3"
   }
 }
