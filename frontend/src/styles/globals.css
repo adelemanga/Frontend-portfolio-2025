@@ -128,9 +128,10 @@ tr:last-child td {
   margin-top: 20vh;
 }
 
-h1.home {
-  color: rgb(18, 18, 19);
+h1.home{
+ color:#0099ff ;
 }
+
 
 h1,
 h2 {
@@ -1567,3 +1568,8 @@ button.drawer-button {
     background: none;
   }
 }
+
+
+
+
+
