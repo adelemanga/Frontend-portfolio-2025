@@ -3,7 +3,7 @@ import client from "../graphql/client";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import React from "react";
+import YouTubeAudio from "../components/Audio";
 
 export default function ContactPage() {
   return (
@@ -12,8 +12,6 @@ export default function ContactPage() {
         <Header />
         <h1>Adèle Manga</h1>
         <Contact />
-        <br />
-        <br />
         <Footer />{" "}
       </div>
     </ApolloProvider>

@@ -1,9 +1,8 @@
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
-import { ADD_CONTACT } from "../graphql/mutations";
 import React from "react";
 
-function Contact() {
+export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
@@ -12,8 +11,6 @@ function Contact() {
   });
 
   const [successMessage, setSuccessMessage] = useState("");
-
-  const [addContact, { loading, error }] = useMutation(ADD_CONTACT);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,14 +24,8 @@ function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    try {
-      await addContact({ variables: formData });
-      setSuccessMessage("Votre message a été envoyé avec succès !");
-      setFormData({ name: "", lastname: "", email: "", message: "" }); // Réinitialiser le formulaire
-    } catch (err) {
-      console.error("Erreur lors de l'envoi du formulaire :", err);
-    }
+    // Future mutation logic here...
+    setSuccessMessage("Form submitted!");
   };
 
   return (
@@ -77,6 +68,8 @@ function Contact() {
         </div>
       </form>
 
+      {successMessage && <p>{successMessage}</p>}
+
       <div className="image-container1">
         <img
           src="https://adelemanga-portfolio.netlify.app/static/media/girlme.0acab6167e7db055cb7a.png"
@@ -89,3 +82,4 @@ function Contact() {
 }
 
 export default Contact;
+
