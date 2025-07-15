@@ -1,6 +1,7 @@
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
 import { ADD_CONTACT } from "../graphql/mutations";
+import React from "react";
 
 function Contact() {
   const [formData, setFormData] = useState({

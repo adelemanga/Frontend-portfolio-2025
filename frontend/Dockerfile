@@ -4,13 +4,14 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm i
+RUN npm install
 
-COPY src ./src
-COPY public ./public
-COPY tsconfig.json ./tsconfig.json
-COPY next-env.d.ts ./next-env.d.ts
-COPY *.config.js ./
+COPY . .
 
-CMD npm run dev
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
 

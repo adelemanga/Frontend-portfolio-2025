@@ -14,9 +14,9 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./app/src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["app/next-env.d.ts", "**/*.ts", "**/*.tsx", "../next-env.d.ts"],
+  "exclude": ["app/node_modules"]
 }

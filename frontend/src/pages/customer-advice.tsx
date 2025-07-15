@@ -1,20 +1,19 @@
 import { ApolloProvider } from "@apollo/client";
 import client from "../graphql/client";
 import Header from "../components/Header";
-import Contact from "../components/Contact";
+import Advice from "../components/Advice";
 import Footer from "../components/Footer";
+import AdviceList from "../components/AdviceList";
 import React from "react";
 
-export default function ContactPage() {
+export default function AdvicePage() {
   return (
     <ApolloProvider client={client}>
       <div>
         <Header />
-        <h1>Adèle Manga</h1>
-        <Contact />
-        <br />
-        <br />
-        <Footer />{" "}
+        <Advice />
+        <AdviceList/>
+        <Footer />
       </div>
     </ApolloProvider>
   );
