@@ -9,6 +9,7 @@ export default function ContactPage() {
         <Header />
         <h1>Adèle Manga</h1>
         <Contact />
+        <br />
         <Footer />{" "}
       </div>
   );
