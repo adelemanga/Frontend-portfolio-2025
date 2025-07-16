@@ -1,6 +1,7 @@
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
 import React from "react";
+import Image from "next/image";
 
 export function Contact() {
   const [formData, setFormData] = useState({

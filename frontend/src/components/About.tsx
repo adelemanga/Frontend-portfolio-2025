@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -26,7 +25,7 @@ export default function AboutMe() {
         {/* Texte de présentation */}
         <div className="text-content">
           <h1 className="title">
-            Hi, I'm <span>Adèle Manga</span> 👋
+            Hi, I am <span>Adèle Manga</span> 👋
           </h1>
           <p className="subtitle">
             Web Developer | Passionate about tech and UI/UX

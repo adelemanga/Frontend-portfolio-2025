@@ -34,7 +34,7 @@ export default function HomePage() {
           transform: "translateY(-50%)",
         }}
       >
-        <h1 className="home">Hello, I'm Adèle Manga</h1>
+        <h1 className="home">Hello, I am Adèle Manga</h1>
         <p>Front-end developer — welcome to my portfolio</p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Blog() {
   return (
@@ -26,10 +27,10 @@ function Blog() {
           <p className="date">Published October 30, 2024</p>
           <p>
             Welcome to my very first portfolio! 🎉 This project represents much
-            more than a simple showcase of my skills: it's a reflection of my
+            more than a simple showcase of my skills: it is a reflection of my
             evolution as a developer.I designed this site with,
             <b>React,</b> <b>Node.js,</b> <b>Javascript</b> and <b>CSS</b>, in
-            putting the emphasis on a modern and dynamic interface. You'll find
+            putting the emphasis on a modern and dynamic interface. You will find
             my projects, my experiences and the technologies I use on a daily
             basis.
           </p>{" "}
@@ -50,7 +51,7 @@ function Blog() {
             to offer a simple and effective platform where users can register
             and book coaching sessions tailored to their needs. Whether for
             individual or group training sessions, the site showcases my
-            friend's skills, training methods, and personalized advice. The aim
+             skills, training methods, and personalized advice. The aim
             is to make learning soccer accessible to all, by offering a fluid
             and enjoyable user experience , while enabling each player to
             progress at his or her own pace
