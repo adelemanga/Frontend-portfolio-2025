@@ -5,12 +5,15 @@ import YouTubeAudio from "../components/Audio";
 
 export default function ContactPage() {
   return (
-      <div>
-        <Header />
-        <h1>Adèle Manga</h1>
-        <Contact />
-        <br />
-        <Footer />{" "}
+    <div>
+      <Header />
+      <h1>Adèle Manga</h1>
+      <Contact />
+      <br />
+      <br />
+      <div className="contactfooter">
+        <Footer />
       </div>
+    </div>
   );
 }

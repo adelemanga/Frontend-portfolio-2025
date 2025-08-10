@@ -5,13 +5,13 @@ import React from "react";
 
 export default function Food() {
   return (
-  
-      <div>
-        <Header />
-        <h1>About Me!</h1>
-        <AboutMe />
+    <div>
+      <Header />
+      <h1>About Me!</h1>
+      <AboutMe />
+      <div className="aboutfooter">
         <Footer />
       </div>
-   
+    </div>
   );
 }

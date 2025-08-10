@@ -5,11 +5,13 @@ import React from "react";
 
 export default function BlogPage() {
   return (
-      <div>
-        <Header />
-        <h1>Welcome to my Blog!</h1>
-        <Blog />
+    <div>
+      <Header />
+      <h1>Welcome to my Blog!</h1>
+      <Blog />
+      <div className="blogfooter">
         <Footer />
       </div>
+    </div>
   );
 }

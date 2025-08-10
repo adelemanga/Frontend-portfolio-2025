@@ -4,12 +4,9 @@ import React from "react";
 export default function AboutMe() {
   return (
     <div className="portfolio">
-      {/* Arrière-plan flou */}
       <div className="blur-background"></div>
 
-      {/* Card de présentation */}
       <div className="profile-card">
-        {/* Image de profil avec cadre */}
         <div className="image-container">
           <div className="image-border">
             <img
@@ -22,7 +19,6 @@ export default function AboutMe() {
           </div>
         </div>
 
-        {/* Texte de présentation */}
         <div className="text-content">
           <h1 className="title">
             Hi, I am <span>Adèle Manga</span> 👋
@@ -31,7 +27,6 @@ export default function AboutMe() {
             Web Developer | Passionate about tech and UI/UX
           </p>
 
-          {/* Boutons */}
           <div className="buttons">
             <Link href="/projects" className="btn">
               See My Projects

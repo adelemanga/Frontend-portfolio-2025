@@ -11,24 +11,6 @@ export function Contact() {
     message: "",
   });
 
-  const [successMessage, setSuccessMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // Future mutation logic here...
-    setSuccessMessage("Form submitted!");
-  };
-
   return (
     <div className="contact">
       <video
@@ -42,7 +24,7 @@ export function Contact() {
       />
       <h2>Adèle Manga</h2>
 
-      <form className="contact" onSubmit={handleSubmit}>
+      <form className="contact">
         <div className="form-group">
           <label htmlFor="lastname">Firstname : Adèle</label>
         </div>
@@ -69,7 +51,7 @@ export function Contact() {
         </div>
       </form>
 
-      {successMessage && <p>{successMessage}</p>}
+      
 
       <div className="image-container1">
         <img
@@ -83,4 +65,3 @@ export function Contact() {
 }
 
 export default Contact;
-
